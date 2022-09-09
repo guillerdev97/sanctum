@@ -47,5 +47,7 @@ class AuthController extends Controller
         ]);
     }
 
-    
+    public function infoUser(Request $request) {
+        return $request->user();
+    }
 }
